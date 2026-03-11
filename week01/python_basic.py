@@ -149,4 +149,6 @@ b = [1, 2, 3]
 print(b.pop())
 print(b)
 
-print
+print(b.pop(0))
+print(b)
+
