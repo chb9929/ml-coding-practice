@@ -85,4 +85,4 @@ b = "a, b, c, d"
 print(b)
 print(b.split(','))
 
-#
+# 리스트 인덱싱
