@@ -32,3 +32,10 @@ print("=" * 5)
 a = "Now is better than never"
 print(a[0])
 print(a[4])
+print(a[-1])
+print(a[-2])
+
+# 문자열 슬라이싱
+b = a[0] + a[1] + a[2]
+print(b)
+
