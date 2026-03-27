@@ -310,7 +310,7 @@ plt.tick_params(axis='y', labelcolor='deeppink')
 plt.legend(loc='upper right')
 
 # 제목 설정
-plt.suptitle('Survival Analysis by Number of Parents/Children (Plarch) on the Titanic')
+plt.suptitle('Survival Analysis by Number of Parents/Children (Parch) on the Titanic')
 plt.tight_layout()
 plt.savefig('Figure13.png')
 plt.close()
@@ -404,7 +404,7 @@ plt.close()
 plt.hist(titanic['Age'], bins=20, color='skyblue', edgecolor='black')
 plt.xlabel('Age')
 plt.ylabel('Count')
-plt.title('Distribution of Ages on th Titanic')
+plt.title('Distribution of Ages on the Titanic')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 # 이미지로 저장
