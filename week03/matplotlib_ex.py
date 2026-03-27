@@ -137,7 +137,7 @@ plt.close()
 ## 히트맵 : 두 변수의 상관 관계를 표시하기**
 
 # 결측치 처리
-titanic = titanic.dropna(subest=['Age', 'Fare'])
+titanic = titanic.dropna(subset=['Age', 'Fare'])
 
 # 상관 행렬 계산
 correlation_matrix = titanic.drop('PassengerId', axis=1).corr(numeric_only=True)
@@ -286,7 +286,7 @@ print(parch_counts)
 # x, y 설정
 x = parch_counts.index.astype(str) # 데이터프레임의 인덱스를 문자열로 반환
 y1 = parch_counts[0].values # 사망자
-y2 = parch_counts[1].avlues # 생존자
+y2 = parch_counts[1].values # 생존자
 
 plt.figure(figsize=(10, 10))
 
