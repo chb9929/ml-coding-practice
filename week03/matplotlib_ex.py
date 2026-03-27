@@ -87,7 +87,7 @@ print(titanic.info(), '\n')
 titanic = titanic.dropna(subset=['Age', 'Fare', 'Survived'])
 print(titanic.info())
 
-# 산점도 그래프 그릭
+# 산점도 그래프 그리기
 plt.figure(figsize=(12, 8))
 scatter = plt.scatter(x='Age', y='Fare', data=titanic, c=titanic['Survived'],cmap='Set2', alpha=0.7)
 
@@ -214,7 +214,7 @@ print(titanic.info())
 # 바이올린 플롯 그리기
 plt.figure(figsize=(10, 6))
 
-# showmeans=Fales는 평균값을 표시하지 않도록 하고, showmedians=True는 중앙값을 표시하도록 함
+# showmeans=False는 평균값을 표시하지 않도록 하고, showmedians=True는 중앙값을 표시하도록 함
 violin_plot = plt.violinplot([titanic[titanic['Pclass'] == 1]['Age'],
                               titanic[titanic['Pclass'] == 2]['Age'],
                               titanic[titanic['Pclass'] == 3]['Age']],
