@@ -199,3 +199,5 @@ from wordcloud import WordCloud
 from PIL import Image
 
 plt.figure(figsize=(15, 5))
+
+# wordcolud에서 작동할 수 있도록 
