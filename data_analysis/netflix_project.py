@@ -216,4 +216,4 @@ wordcloud = WordCloud(background_color = 'white', width = 1400, height = 1400,
                       max_words = 170, mask = mask, colormap=cmap).generate(text)
 
 plt.suptitle('Keywords in the description of Movies and TV shows',
-             fontweight)
+             fontweight='bold', fontfamily)
