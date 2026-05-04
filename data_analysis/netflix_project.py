@@ -134,3 +134,22 @@ plt.figure(figsize=(12, 6))
 
 sns.barplot(x=genres.values, y=genres.index, hue=genres.index, palette='RdGy')
 
+plt.title('Distribution of Genres for Movies and TV Shows on Netflix', fontsize=16)
+plt.xlabel('Count', fontsize=14)
+plt.ylabel('Genre', fontsize=14)
+plt.grid(axis='x')
+plt.show()
+
+netflix[netflix['title'].str.contains('Sankofa', na=False, case=False)]
+
+# 출력할 최대 행 수를 None으로 설정해서 모두 출력
+pd.set_option('display.max_rows', None)
+
+# 쉼표로 country 열의 값을 파이썬 리스트로 만들기
+netflix['country'] = netflix['country'].str.split(', ')
+netflix['country']
+
+# 파이썬 리스트로 바꾼 country 열의 값이 explode( ) 함수를 적용하여 개별 행으로 분리
+netflix_age_country = netflix.explode('country')
+netflix_age_country
+
