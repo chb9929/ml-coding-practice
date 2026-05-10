@@ -115,7 +115,7 @@ print(sgd_reg.predict([[1.5]]))
 # 이전과 거의 동일한 솔루션을 얻을 수 있음을 보여줍니다.
 ridge_reg = Ridge(alpha=0.1, solver="sag", random_state=42)
 ridge_reg.fit(X, y)
-print(ridge_reg.predict([1.5]))
+print(ridge_reg.predict([[1.5]]))
 
 # 라쏘 회귀
 
@@ -149,7 +149,7 @@ from sklearn.model_selection import train_test_split
 
 X = iris.data[["petal width (cm)"]].values
 y = iris.target_names[iris.target] == 'virginica'
-X_train, X_test, y_train, y_test = train__test_split(X, y, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 log_reg = LogisticRegression(random_state=42)
 log_reg.fit(X_train, y_train)
